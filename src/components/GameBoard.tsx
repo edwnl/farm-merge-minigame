@@ -59,7 +59,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.2 }}
             >
-              <span style={{ fontSize: "2.5rem", rotate: "90deg" }}>
+              <span style={{ fontSize: "3rem", rotate: "90deg" }}>
                 {cell.value}
               </span>
             </motion.div>
