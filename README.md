@@ -2,6 +2,9 @@
 
 Speed Merge Valley is an engaging puzzle game where players merge farm objects on a grid, aiming to clear the board as quickly as possible. This project demonstrates the use of modern web technologies to create an interactive and visually appealing game.
 
+![image](https://github.com/user-attachments/assets/fc7217f4-d19b-415d-8efd-35661f7cf980)
+![image](https://github.com/user-attachments/assets/8ab54cc4-f0fa-46ef-a5e4-2958334552a2)
+
 ## Features
 
 - 10x10 grid gameplay with various farm objects
