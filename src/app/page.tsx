@@ -58,7 +58,7 @@ const FarmMergeLandingPage: React.FC = () => {
       </div>
 
       <a
-        href="https://github.com/yourusername/speed-merge-valley"
+        href="https://github.com/edwnl/farm-merge-minigame"
         target="_blank"
         rel="noopener noreferrer"
         className="text-green-600 hover:text-green-800 transition-colors"
