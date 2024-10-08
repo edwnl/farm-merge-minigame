@@ -1,14 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
-import { Table, Spin, message, Button, Input } from "antd";
+import React, { useCallback, useEffect, useState } from "react";
+import { Button, Input, message, Spin, Table } from "antd";
 import { ArrowLeftOutlined, RedoOutlined } from "@ant-design/icons";
 import { useRouter } from "next/navigation";
 import { fetchLeaderboardData } from "@/lib/leaderboardService";
 import { LeaderboardItemDisplay } from "@/types/leaderboard";
 import { getLeaderboardColumns } from "@/components/LeaderboardColumns";
-
-const { Search } = Input;
 
 const Leaderboard: React.FC = () => {
   const [leaderboardData, setLeaderboardData] = useState<

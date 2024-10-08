@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Input } from "antd";
+import { Input, Modal } from "antd";
 
 interface GameOverModalProps {
   isGameOver: boolean;

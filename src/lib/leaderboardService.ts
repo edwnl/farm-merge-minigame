@@ -1,11 +1,11 @@
 import {
+  addDoc,
   collection,
   getDocs,
-  query,
-  orderBy,
   limit,
+  orderBy,
+  query,
   QueryDocumentSnapshot,
-  addDoc,
 } from "firebase/firestore";
 import { db } from "@/lib/firebaseClient";
 import { LeaderboardItem, LeaderboardItemDisplay } from "@/types/leaderboard";

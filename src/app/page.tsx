@@ -3,9 +3,9 @@
 import React from "react";
 import { Button } from "antd";
 import {
+  GithubOutlined,
   PlayCircleOutlined,
   TrophyOutlined,
-  GithubOutlined,
 } from "@ant-design/icons";
 import { useRouter } from "next/navigation";
 
