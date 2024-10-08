@@ -9,14 +9,10 @@ export interface LeaderboardItem {
   date: Date;
 }
 
-export interface LeaderboardItemDisplay {
-  id: string;
-  name: string;
-  time: string;
-  swapMoves: number;
-  mergeMoves: number;
-  movesPerSecond: number;
-  swapToMergeRatio: number;
+export interface LeaderboardItemDisplay extends Omit<LeaderboardItem, "date"> {
+  timeFormatted: string;
+  movesPerSecondFormatted: string;
+  swapToMergeRatioFormatted: string;
   date: string;
   timestamp: string;
 }

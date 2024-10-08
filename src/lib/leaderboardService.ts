@@ -1,5 +1,3 @@
-"use client";
-
 import {
   collection,
   getDocs,
@@ -7,10 +5,10 @@ import {
   orderBy,
   limit,
   QueryDocumentSnapshot,
+  addDoc,
 } from "firebase/firestore";
 import { db } from "@/lib/firebaseClient";
 import { LeaderboardItem, LeaderboardItemDisplay } from "@/types/leaderboard";
-import { addDoc } from "@firebase/firestore";
 
 interface LeaderboardUploadData {
   playerName: string;
@@ -56,7 +54,9 @@ export const fetchLeaderboardData = async (): Promise<
     return {
       id: doc.id,
       ...data,
-      time: data.time.toFixed(2),
+      timeFormatted: data.time.toFixed(2),
+      movesPerSecondFormatted: data.movesPerSecond.toFixed(2),
+      swapToMergeRatioFormatted: data.swapToMergeRatio.toFixed(2),
       date: date.toLocaleDateString(),
       timestamp: date.toLocaleString(),
     };
