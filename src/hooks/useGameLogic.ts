@@ -186,6 +186,7 @@ export const useGameLogic = (gridWidth: number, gridHeight: number) => {
         console.error(error);
       } finally {
         setIsSubmitting(false);
+        reset();
       }
     } else {
       message.warning("Please enter your name.");
